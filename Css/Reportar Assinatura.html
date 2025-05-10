@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Assinatura</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(77, 94, 94);
+        }
+        div{
+            background-color: aliceblue;
+            border: 5px solid rgb(252, 243, 228);
+            box-shadow: 0px 7px 8px 0px rgb(252, 243, 228);
+            padding: 20px;
+            margin: 30%;
+            margin-top: 10%;
+            margin-bottom: 0px;
+        }
+        label{
+            margin-bottom: 10px;
+        }
+        .inpu{
+            width: 100%;
+            margin-bottom: 30px;
+            height: 50px;
+        }
+        button{
+            color: black;
+            padding: 8px;
+            width: 100%;
+            background-color: rgb(0, 255, 0);
+        }
+        button:hover{
+            background-color: rgb(2, 80, 2);
+        }
+        textarea{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="color: rgb(49, 49, 247);">Reportar Assinatura</h1>
+        <form action="pagina_inicial.html">
+
+            <br><br>
+            <label for="Nome">Nome</label>
+            <input class="inpu" type="text" id="Nome" placeholder="Digite O seu Nome" required>
+
+            <label for="Email">Email</label>
+            <input class="inpu" type="email" id="Email" placeholder="Digite O seu Email" required>
+
+            <label for="Mensagem">Mensagem:</label>
+            <textarea id="Mensagem" name="Mensagem" rows="4" required></textarea>
+            <br><br>
+            <button onclick="validar()">Enviar</button>
+
+        </form>
+        <script src="index.js"></script>
+    </div>
+</body>
+</html>

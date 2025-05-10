@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar</title>
+    <style>
+        .pr{
+            background-image: url(img/bv.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .principal{
+            background-image: url(img/Fundo.jpg);
+            position: relative;
+            display: inline-block;
+            border: solid 3px white;
+            box-shadow: 0 5px 9px 0;
+            background-color: aqua;
+            height: 500px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .ti{
+            font-size: 70px;
+            display: inline;
+            color: blue;
+            text-shadow: 5px 5px 2px rgb(30, 30, 255);
+        }
+        .co{
+            color: rgb(0, 0, 255);
+            margin-left: 25px;
+        }
+        .bo{
+            position: absolute;
+            display: inline-block;
+            text-align: center;
+            background: white;
+            width: 300px;
+            height: auto;
+            box-shadow: 0 4px 8px 0 black;
+           
+        }
+        .pt{
+            position: absolute;
+            right: 700px;
+            display: inline-block;
+            text-align: center;
+            background: white;
+            width: 300px;
+            height: auto;
+            box-shadow: 0 4px 8px 0 black;
+        }
+        .pc{
+            position: absolute;
+            right: -0%;
+            display: inline-block;
+            text-align: center;
+            background: white;
+            width: 300px;
+            height: auto;
+            box-shadow: 0 4px 8px 0 black;
+        }
+        .pb{
+            position: absolute;
+            left: 700px;
+            display: inline-block;
+            text-align: center;
+            background: white;
+            width: 300px;
+            height: auto;
+            box-shadow: 0 4px 8px 0 black;
+        }
+        p:hover{
+            white-space: Normal;
+        }
+        .loy{
+    color:rgb(55, 0, 255);
+    text-decoration: none;
+}
+.loy:hover{
+    color:green; ;
+}
+button:hover{
+    
+    background:white;
+}
+.lop{
+    float: right;
+    border-radius: 10px;
+    color:blue;
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;}
+    .lop:hover{
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 20px;
+}
+p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ti{
+            font-size: 50px;
+            display: inline;
+            color: rgb(20, 20, 124);;
+            text-shadow: 5px 5px 2px rgb(30, 30, 255);}
+    </style>
+</head>
+<body class="pr" onload="alert(`Terminou de Carregar`)">
+    <a href="pagina_inicial.html" class="lop" ><img src="img/angle-small-right.png" alt="Página Inicial..."></a>
+    <h1 class="ti" style="margin-left: 70px;">Agência Fake</h1>
+    <br><br><br>
+   <h1 class="co">Desejas fazer Uma Viagem á Volta Do Mundo?</h1>
+   <br><br><br><br>
+   <h2 class="co" style="text-align: center;font-size: 30px;">Apresentamos-lhe Os Planos de Assinatura:</h2>
+
+   <div class="principal">
+    <nav class="bo">
+        <video height="200px" width="300px" src="vid/vid (7).mp4" autoplay></video>
+            <h3 class="co">📦 Assinatura Mini</h3>
+            <p>   
+O mais básico.
+Pré
+Limite de recursos
+Ideal para quem quer economizar ou tem uso leve. 
+            <br><br>
+            <button style="border-radius: 10px;" ><a class="loy" href="#">200$</a></button>
+    </nav>
+    <nav class="pt">
+        <video height="200px" width="300px" src="vid/vid (1).mp4" autoplay></video>
+        
+            <h3 class="co">📦 Assinatura Mini Mais</h3>
+            <p>
+                Uma evolução do Mini.
+                
+                Preço um pouco maior.
+                
+                Acrescenta alguns benefícios a mais.
+                
+                Bom para quem quer um pouco mais, mas ainda está controlando o orçamento.
+            <br>
+            <br>
+            <button style="border-radius: 10px;" ><a class="loy" href="#">300$</a></button>
+    </nav>
+
+    <nav class="pc">
+        <video height="200px" width="300px" src="vid/vid (2).mp4" autoplay></video>
+        <div class="reduzir">
+            <h3 class="co">💎 Assinatura Max</h3>
+            <p>
+                O topo de linha.
+                Preço mais alto.
+                Inclui todos os recursos possíveis: máxima qualidade, múltiplos dispositivos, bônus extras (como internet ilimitada, canais pay-per-view, ou espaço de armazenamento gigante).
+                Ideal pra famílias, empresas, ou usuários exigentes.
+            <br>
+            <br>
+            <button style="border-radius: 10px;" ><a class="loy" href="#">1000$</a></button>
+    </nav>
+
+    <nav class="pb">
+        <video height="200px" width="300px" src="vid/vid (6).mp4" autoplay></video>
+            <h3 class="co">🌟 Assinatura Premium</h3>
+            <p>
+                Mais completo.
+                Preço intermediário a alto.
+                Inclui muitos benefícios: acesso a conteúdos exclusivos, suporte prioritário.
+                Ótimo para quem usa bastante ou quer uma experiência mais rica.
+            <br>
+            <br>
+            <button style="border-radius: 10px;" ><a class="loy" href="#">500$</a></button>
+    </nav>
+</div>
+</body>
+</html>

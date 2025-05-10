@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head class="Cap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cria_Conta</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        input:hover{
+            border: 2px solid rgb(46, 46, 44);
+        }
+        .tama{
+            float: right;
+            margin:20px;
+        }
+        img:hover{
+            background-color: rgb(148, 148, 133);
+        }
+    </style>
+</head>
+<body class="r">
+
+    <form action="index.html" class="Login">
+    <h1>Criar Conta</h1>
+    <label for="Nome">Nome:</label>
+    <input id="Nome" type="text" placeholder="Digite o seu nome" required >
+    <br><br>
+        <label for="Gmail">Gmail:</label>
+        <input id="Gmail" type="email or number" placeholder="Digite o seu Gmail ou Número" required>
+        <br><br>
+        <label for="Senha">Senha:</label>
+        <input id="Senha" type="password" placeholder="Digite o seu Senha" required>
+        <br><br>
+    <select required>
+        <option value="Escolha o seu Género" hidden>Escolha o seu Género</option>
+        <option value="Homem">Homem</option>
+        <option value="Mulher">Mulher</option>
+        </select>
+        <br>
+        <br>
+        <button onclick="P()" class="f">Criar Conta</button>
+        <br>
+        <br>
+        
+        </form>
+    <a href="index.html"  class="tama"><img src="img/angle-small-right.png" height="30px" style="background-color: white; " alt=""></a>
+
+    <script src="teste.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+Para QR
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar QR Code</title>
+</head>
+<body>
+
+    <h1>QR Code Generator</h1>
+    <input type="text" id="qrInput" placeholder="Digite o texto aqui">
+    <button onclick="generateQRCode()">Gerar QR Code</button>
+    <div id="qrcode"></div>
+
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script>
+        function generateQRCode() {
+            var inputText = document.getElementById("qrInput").value;
+            if (inputText) {
+                document.getElementById("qrcode").innerHTML = ""; // Limpa o QR Code anterior
+                var qrcode = new QRCode(document.getElementById("qrcode"), {
+                    text: inputText,
+                    width: 128,
+                    height: 128
+                });
+            } else {
+                alert("Por favor, insira um texto.");
+            }
+        }
+    </script>
+</body>
+</html>
